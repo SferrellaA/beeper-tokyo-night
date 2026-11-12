@@ -1,0 +1,50 @@
+{
+    "schemes": [
+        {
+            "name": "Frutiger Aero",
+            "background": "#D7F1FA",
+            "foreground": "#0E3A4A",
+            "cursorColor": "#006399",
+            "selectionBackground": "#7BBFDB",
+            "black": "#163848",
+            "red": "#C23044",
+            "green": "#15752E",
+            "yellow": "#8A5600",
+            "blue": "#006399",
+            "purple": "#654890",
+            "cyan": "#0B6E78",
+            "white": "#3F6270",
+            "brightBlack": "#4A6D7C",
+            "brightRed": "#D24E5E",
+            "brightGreen": "#1F8A34",
+            "brightYellow": "#A86E00",
+            "brightBlue": "#0E78B0",
+            "brightPurple": "#7A5EAA",
+            "brightCyan": "#0C8490",
+            "brightWhite": "#F7FCFF"
+        },
+        {
+            "name": "Frutiger Aero Dusk",
+            "background": "#0B2433",
+            "foreground": "#E7F7FF",
+            "cursorColor": "#7EDEF5",
+            "selectionBackground": "#1A5570",
+            "black": "#2C6478",
+            "red": "#FF6B81",
+            "green": "#5DDB78",
+            "yellow": "#FFD166",
+            "blue": "#4FC3F7",
+            "purple": "#C9A6FF",
+            "cyan": "#5EEDF0",
+            "white": "#C5E4EF",
+            "brightBlack": "#7F9BAB",
+            "brightRed": "#FF97A6",
+            "brightGreen": "#B6FF6A",
+            "brightYellow": "#FFE08A",
+            "brightBlue": "#8AD7FF",
+            "brightPurple": "#E0C6FF",
+            "brightCyan": "#A8FFF8",
+            "brightWhite": "#FFFFFF"
+        }
+    ]
+}

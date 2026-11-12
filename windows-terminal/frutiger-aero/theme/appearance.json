@@ -1,0 +1,12 @@
+{
+    "colorScheme": {
+        "light": "Frutiger Aero",
+        "dark": "Frutiger Aero Dusk"
+    },
+    "useAcrylic": true,
+    "opacity": 92,
+    "backgroundImage": "assets/background.png",
+    "backgroundImageOpacity": 0.15,
+    "backgroundImageStretchMode": "uniformToFill",
+    "backgroundImageAlignment": "center"
+}

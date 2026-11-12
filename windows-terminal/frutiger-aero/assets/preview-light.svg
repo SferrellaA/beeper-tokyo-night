@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Frutiger Aero light preview</title>
+  <desc id="desc">Illustrated Windows Terminal window using the Frutiger Aero sky palette. This is a drawing, not a screenshot.</desc>
+  <defs>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7FCFF"/>
+      <stop offset="0.45" stop-color="#B7DFF0"/>
+      <stop offset="1" stop-color="#8FCEE4"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" rx="18" fill="#3AA0C8"/>
+  <rect x="3" y="3" width="954" height="534" rx="16" fill="url(#glass)"/>
+  <rect x="18" y="14" width="168" height="32" rx="8" fill="#B9DCEA"/>
+  <rect x="196" y="14" width="196" height="32" rx="8" fill="#F3FBFE"/>
+  <rect x="196" y="14" width="196" height="14" rx="8" fill="url(#shine)"/>
+  <text x="34" y="35" fill="#0E3A4A" font-family="Segoe UI, sans-serif" font-size="14">PowerShell</text>
+  <text x="214" y="35" fill="#0E3A4A" font-family="Segoe UI, sans-serif" font-size="14">Ubuntu</text>
+  <rect x="12" y="54" width="936" height="474" rx="12" fill="#D7F1FA"/>
+  <g font-family="Cascadia Mono, Consolas, ui-monospace, monospace" font-size="16">
+    <text x="36" y="96" fill="#15752E">user@aero</text>
+    <text x="148" y="96" fill="#0E3A4A">:</text>
+    <text x="162" y="96" fill="#006399">~</text>
+    <text x="186" y="96" fill="#0E3A4A">$ ls</text>
+    <text x="36" y="126" fill="#006399">Documents</text>
+    <text x="176" y="126" fill="#15752E">Pictures</text>
+    <text x="300" y="126" fill="#654890">Music</text>
+    <text x="36" y="168" fill="#15752E">user@aero</text>
+    <text x="148" y="168" fill="#0E3A4A">:</text>
+    <text x="162" y="168" fill="#006399">~</text>
+    <text x="186" y="168" fill="#0E3A4A">$ echo glass</text>
+    <text x="36" y="198" fill="#0E3A4A">glass</text>
+  </g>
+  <g font-family="Segoe UI, sans-serif" font-size="12">
+    <g transform="translate(36 250)">
+      <rect width="96" height="64" rx="8" fill="#163848"/>
+      <text x="12" y="84" fill="#0E3A4A">black</text>
+    </g>
+    <g transform="translate(148 250)">
+      <rect width="96" height="64" rx="8" fill="#C23044"/>
+      <text x="12" y="84" fill="#0E3A4A">red</text>
+    </g>
+    <g transform="translate(260 250)">
+      <rect width="96" height="64" rx="8" fill="#15752E"/>
+      <text x="12" y="84" fill="#0E3A4A">green</text>
+    </g>
+    <g transform="translate(372 250)">
+      <rect width="96" height="64" rx="8" fill="#8A5600"/>
+      <text x="12" y="84" fill="#0E3A4A">yellow</text>
+    </g>
+    <g transform="translate(484 250)">
+      <rect width="96" height="64" rx="8" fill="#006399"/>
+      <text x="12" y="84" fill="#0E3A4A">blue</text>
+    </g>
+    <g transform="translate(596 250)">
+      <rect width="96" height="64" rx="8" fill="#654890"/>
+      <text x="12" y="84" fill="#0E3A4A">purple</text>
+    </g>
+    <g transform="translate(708 250)">
+      <rect width="96" height="64" rx="8" fill="#0B6E78"/>
+      <text x="12" y="84" fill="#0E3A4A">cyan</text>
+    </g>
+    <g transform="translate(820 250)">
+      <rect width="96" height="64" rx="8" fill="#3F6270"/>
+      <text x="12" y="84" fill="#0E3A4A">white</text>
+    </g>
+    <g transform="translate(36 360)">
+      <rect width="96" height="64" rx="8" fill="#4A6D7C"/>
+      <text x="12" y="84" fill="#0E3A4A">bright black</text>
+    </g>
+    <g transform="translate(148 360)">
+      <rect width="96" height="64" rx="8" fill="#D24E5E"/>
+      <text x="12" y="84" fill="#0E3A4A">bright red</text>
+    </g>
+    <g transform="translate(260 360)">
+      <rect width="96" height="64" rx="8" fill="#1F8A34"/>
+      <text x="12" y="84" fill="#0E3A4A">bright green</text>
+    </g>
+    <g transform="translate(372 360)">
+      <rect width="96" height="64" rx="8" fill="#A86E00"/>
+      <text x="12" y="84" fill="#0E3A4A">bright yellow</text>
+    </g>
+    <g transform="translate(484 360)">
+      <rect width="96" height="64" rx="8" fill="#0E78B0"/>
+      <text x="12" y="84" fill="#0E3A4A">bright blue</text>
+    </g>
+    <g transform="translate(596 360)">
+      <rect width="96" height="64" rx="8" fill="#7A5EAA"/>
+      <text x="12" y="84" fill="#0E3A4A">bright purple</text>
+    </g>
+    <g transform="translate(708 360)">
+      <rect width="96" height="64" rx="8" fill="#0C8490"/>
+      <text x="12" y="84" fill="#0E3A4A">bright cyan</text>
+    </g>
+    <g transform="translate(820 360)">
+      <rect width="96" height="64" rx="8" fill="#F7FCFF" stroke="#A9C9D6"/>
+      <text x="12" y="84" fill="#0E3A4A">bright white</text>
+    </g>
+  </g>
+</svg>

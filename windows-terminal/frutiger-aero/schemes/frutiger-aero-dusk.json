@@ -1,0 +1,23 @@
+{
+    "name": "Frutiger Aero Dusk",
+    "background": "#0B2433",
+    "foreground": "#E7F7FF",
+    "cursorColor": "#7EDEF5",
+    "selectionBackground": "#1A5570",
+    "black": "#2C6478",
+    "red": "#FF6B81",
+    "green": "#5DDB78",
+    "yellow": "#FFD166",
+    "blue": "#4FC3F7",
+    "purple": "#C9A6FF",
+    "cyan": "#5EEDF0",
+    "white": "#C5E4EF",
+    "brightBlack": "#7F9BAB",
+    "brightRed": "#FF97A6",
+    "brightGreen": "#B6FF6A",
+    "brightYellow": "#FFE08A",
+    "brightBlue": "#8AD7FF",
+    "brightPurple": "#E0C6FF",
+    "brightCyan": "#A8FFF8",
+    "brightWhite": "#FFFFFF"
+}

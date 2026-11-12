@@ -1,0 +1,23 @@
+{
+    "name": "Frutiger Aero",
+    "background": "#D7F1FA",
+    "foreground": "#0E3A4A",
+    "cursorColor": "#006399",
+    "selectionBackground": "#7BBFDB",
+    "black": "#163848",
+    "red": "#C23044",
+    "green": "#15752E",
+    "yellow": "#8A5600",
+    "blue": "#006399",
+    "purple": "#654890",
+    "cyan": "#0B6E78",
+    "white": "#3F6270",
+    "brightBlack": "#4A6D7C",
+    "brightRed": "#D24E5E",
+    "brightGreen": "#1F8A34",
+    "brightYellow": "#A86E00",
+    "brightBlue": "#0E78B0",
+    "brightPurple": "#7A5EAA",
+    "brightCyan": "#0C8490",
+    "brightWhite": "#F7FCFF"
+}

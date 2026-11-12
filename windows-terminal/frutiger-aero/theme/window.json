@@ -1,0 +1,44 @@
+{
+    "theme": {
+        "light": "Frutiger Aero",
+        "dark": "Frutiger Aero Dusk"
+    },
+    "themes": [
+        {
+            "name": "Frutiger Aero",
+            "window": {
+                "applicationTheme": "light",
+                "useMica": true,
+                "frame": "#3AA0C8",
+                "unfocusedFrame": "#A9C9D6"
+            },
+            "tab": {
+                "background": "#F3FBFE",
+                "unfocusedBackground": "#B9DCEA",
+                "showCloseButton": "hover"
+            },
+            "tabRow": {
+                "background": "#ffffff00",
+                "unfocusedBackground": "#D5EEF6FF"
+            }
+        },
+        {
+            "name": "Frutiger Aero Dusk",
+            "window": {
+                "applicationTheme": "dark",
+                "useMica": true,
+                "frame": "#1A6F8A",
+                "unfocusedFrame": "#1A3340"
+            },
+            "tab": {
+                "background": "#12384A",
+                "unfocusedBackground": "#0C2836",
+                "showCloseButton": "hover"
+            },
+            "tabRow": {
+                "background": "#00000000",
+                "unfocusedBackground": "#071820FF"
+            }
+        }
+    ]
+}
