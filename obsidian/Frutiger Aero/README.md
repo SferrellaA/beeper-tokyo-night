@@ -2,7 +2,7 @@
 
 Vista glass over the aurora wallpaper. Day uses the pale aqua panels from the [Frutiger Aero Archive](https://frutigeraeroarchive.org/) theme. Night is the same chrome on deep water, so the wallpaper stays readable.
 
-The picture is [`assets/windows_vista_59.jpg`](assets/windows_vista_59.jpg), from [windows_vista_59.jpg](https://frutigeraeroarchive.org/images/wallpapers/windows_vista/windows_vista_59.jpg). Icons are PNG extracts of the Vista and Explorer icons on [the archive icon page](https://frutigeraeroarchive.org/icons). Obsidian draws them as CSS backgrounds. They do not need to be SVG. Lucide icons that this theme does not replace stay as they are.
+The picture is [`assets/aurora.jpg`](assets/aurora.jpg), an original aurora generated for this theme. [`assets/aurora.png`](assets/aurora.png) is the same picture with its provenance data. Icons are PNG extracts of the Vista and Explorer icons on [the archive icon page](https://frutigeraeroarchive.org/icons). Obsidian draws them as CSS backgrounds. They do not need to be SVG. Lucide icons that this theme does not replace stay as they are.
 
 ## Install
 
@@ -13,7 +13,7 @@ This folder is already named `Frutiger Aero`, which is the `name` in [`manifest.
 3. Settings → Appearance → Themes → **Frutiger Aero**.
 4. Pick **Light** or **Dark**. **System** follows the OS.
 
-A symlink is fine if the link name is `Frutiger Aero`.
+A symlink is fine if the link name is `Frutiger Aero`. The working copy is `C:\Users\al\Insync\Planner\.obsidian\themes\Frutiger Aero`. `scripts/sync-obsidian-theme.sh` copies this folder there.
 
 ## What you see
 
@@ -57,4 +57,4 @@ The picture and icons are embedded in `theme.css`. Obsidian does not load a rela
 
 ## License
 
-Theme CSS and this note are [MIT](../../LICENSE). The wallpaper and icons are not. They come from the Frutiger Aero Archive and from Windows Vista / Windows 7, and they stay under their own terms.
+Theme CSS and this note are [MIT](../../LICENSE). The wallpaper was created with Grok for this theme. The icons are not MIT. They come from the Frutiger Aero Archive and from Windows Vista / Windows 7, and they stay under their own terms.
