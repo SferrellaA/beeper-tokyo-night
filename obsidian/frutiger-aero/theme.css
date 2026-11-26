@@ -1,0 +1,723 @@
+/* Frutiger Aero for Obsidian
+ *
+ * Day is the archive's Vista glass: split-horizon title bars, aqua panels,
+ * white specular edges. Night keeps that chrome and darkens the glass so the
+ * same aurora wallpaper stays readable.
+ *
+ * Colors follow https://frutigeraeroarchive.org/css/themes/frutiger_aero.css
+ * Wallpaper is windows_vista_59.jpg from that archive. Icons are PNG extracts
+ * of the Vista / Explorer icons on https://frutigeraeroarchive.org/icons —
+ * Obsidian paints them as CSS backgrounds, so they do not need to be SVG.
+ */
+
+body {
+  --fa-wallpaper: url("assets/windows_vista_59.jpg");
+  --fa-icon-files: url("assets/icons/files.png");
+  --fa-icon-note: url("assets/icons/note.png");
+  --fa-icon-search: url("assets/icons/search.png");
+  --fa-icon-book: url("assets/icons/book.png");
+  --fa-icon-graph: url("assets/icons/graph.png");
+  --fa-icon-calendar: url("assets/icons/calendar.png");
+  --fa-icon-settings: url("assets/icons/settings.png");
+  --fa-icon-info: url("assets/icons/info.png");
+  --fa-icon-warning: url("assets/icons/warning.png");
+  --fa-icon-help: url("assets/icons/help.png");
+  --fa-icon-image: url("assets/icons/image.png");
+  --fa-icon-video: url("assets/icons/video.png");
+  --fa-icon-console: url("assets/icons/console.png");
+  --fa-icon-computer: url("assets/icons/computer.png");
+  --fa-icon-trash: url("assets/icons/trash.png");
+  --fa-icon-share: url("assets/icons/share.png");
+  --fa-icon-shield: url("assets/icons/shield.png");
+  --fa-icon-sidebar: url("assets/icons/sidebar.png");
+  --fa-icon-marketplace: url("assets/icons/marketplace.png");
+  --fa-icon-accessibility: url("assets/icons/accessibility.png");
+
+  --font-interface-theme: "Segoe UI", "Segoe UI Variable Display", Frutiger, "Frutiger Linotype", "Trebuchet MS", sans-serif;
+  --font-text-theme: "Segoe UI", "Segoe UI Variable Text", Frutiger, Calibri, sans-serif;
+  --font-monospace-theme: "Cascadia Mono", "Cascadia Code", Consolas, "Segoe UI Mono", monospace;
+
+  --radius-s: 4px;
+  --radius-m: 6px;
+  --radius-l: 8px;
+  --input-radius: 4px;
+  --tab-radius: 6px;
+  --tab-radius-active: 6px;
+  --clickable-icon-radius: 4px;
+
+  background-color: #1278b0;
+  background-image: var(--fa-wallpaper);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  scrollbar-color: rgba(23, 137, 212, 0.85) rgba(255, 255, 255, 0.35);
+}
+
+.theme-light {
+  --accent-h: 204;
+  --accent-s: 84%;
+  --accent-l: 47%;
+  --color-accent: #128ddf;
+  --color-accent-1: #9ad1fc;
+  --color-accent-2: #0a84d6;
+
+  --fa-titlebar: linear-gradient(to bottom, #9ad1fc 0%, #80c4f1 15%, #169bf3 50%, #1286d3 90%, #1488d6 100%);
+  --fa-heading: linear-gradient(to bottom, #9ad1fc 0%, #83c6f3 10%, #128ddf 50%, #0f75b9 50%, #137bc0 70%, #5bade4 100%);
+  --fa-button: linear-gradient(to bottom, #a3cdec 10%, #5db7f3 50%, #296fa1 50%, #62b3ec 100%);
+  --fa-button-hover: linear-gradient(to bottom, #a3cdec 10%, #5db7f3 50%, #296fa1 50%, #63e8ff 100%);
+  --fa-active: linear-gradient(to bottom, rgba(196, 194, 194, 0.2) 0%, rgba(194, 193, 193, 0.2) 50%, rgba(214, 214, 214, 0.3) 50%, rgba(55, 192, 255, 0.8) 100%);
+  --fa-scroll: linear-gradient(180deg, #ffffff 0%, #9adfff 42%, #1a93d8 100%);
+  --fa-code-bg: rgba(242, 244, 248, 0.92);
+  --fa-callout-bg: rgba(242, 250, 255, 0.72);
+
+  --background-primary: rgba(242, 250, 255, 0.88);
+  --background-primary-alt: rgba(218, 246, 255, 0.78);
+  --background-secondary: rgba(166, 227, 255, 0.58);
+  --background-secondary-alt: rgba(186, 227, 255, 0.42);
+  --background-modifier-border: rgba(135, 176, 189, 0.85);
+  --background-modifier-border-hover: #4da1da;
+  --background-modifier-border-focus: #0a84d6;
+  --background-modifier-hover: rgba(55, 192, 255, 0.28);
+  --background-modifier-active-hover: rgba(55, 192, 255, 0.42);
+  --background-modifier-form-field: rgba(255, 255, 255, 0.82);
+  --background-modifier-cover: rgba(8, 40, 64, 0.28);
+  --background-modifier-box-shadow: rgba(0, 40, 70, 0.28);
+  --background-modifier-success: rgba(20, 141, 40, 0.18);
+  --background-modifier-error: rgba(196, 48, 48, 0.16);
+  --background-modifier-error-rgb: 196, 48, 48;
+  --background-modifier-error-hover: rgba(196, 48, 48, 0.28);
+
+  --text-normal: #102030;
+  --text-muted: #1d5278;
+  --text-faint: #4e88b1;
+  --text-on-accent: #ffffff;
+  --text-accent: #0f75b9;
+  --text-accent-hover: #006deb;
+  --text-error: #b4232c;
+  --text-warning: #8a5600;
+  --text-success: #148d28;
+  --text-highlight-bg: rgba(56, 172, 250, 0.45);
+  --text-selection: rgba(56, 172, 250, 0.45);
+
+  --interactive-normal: #1d5278;
+  --interactive-hover: #006deb;
+  --interactive-accent: #128ddf;
+  --interactive-accent-hover: #0a84d6;
+  --interactive-success: #148d28;
+
+  --link-color: #1c95e6;
+  --link-color-hover: #006deb;
+  --link-external-color: #1c95e6;
+  --link-external-color-hover: #006deb;
+  --link-unresolved-color: #7a4ea3;
+
+  --heading-formatting: #4e88b1;
+  --h1-color: #0f75b9;
+  --h2-color: #128ddf;
+  --h3-color: #137bc0;
+  --h4-color: #1d5278;
+  --h5-color: #1d5278;
+  --h6-color: #1d5278;
+
+  --titlebar-background: #1286d3;
+  --titlebar-background-focused: #169bf3;
+  --titlebar-text-color-focused: #ffffff;
+  --tab-text-color: rgba(255, 255, 255, 0.86);
+  --tab-text-color-focused: #ffffff;
+  --tab-text-color-focused-active: #08365a;
+  --tab-text-color-focused-highlighted: #08365a;
+  --tab-outline-color: #4da1da;
+
+  --ribbon-background: rgba(166, 227, 255, 0.38);
+  --divider-color: rgba(77, 161, 218, 0.55);
+  --nav-item-color: #102030;
+  --nav-item-color-hover: #006deb;
+  --nav-item-color-active: #006deb;
+  --nav-item-color-selected: #006deb;
+  --nav-item-background-hover: rgba(55, 192, 255, 0.28);
+  --nav-item-background-active: rgba(55, 192, 255, 0.55);
+  --nav-item-background-selected: rgba(55, 192, 255, 0.55);
+  --icon-color: #1d5278;
+  --icon-color-hover: #006deb;
+  --icon-color-active: #0a84d6;
+  --icon-color-focused: #006deb;
+
+  --tag-color: #0f75b9;
+  --tag-background: rgba(154, 209, 252, 0.55);
+  --tag-background-hover: rgba(93, 183, 243, 0.7);
+  --blockquote-border-color: #128ddf;
+  --list-marker-color: #128ddf;
+  --checkbox-color: #128ddf;
+  --checkbox-color-hover: #0a84d6;
+  --checkbox-marker-color: #ffffff;
+  --indentation-guide: rgba(77, 161, 218, 0.45);
+  --indentation-guide-active: #128ddf;
+  --status-bar-text-color: #ffffff;
+  --status-bar-border-color: #4da1da;
+  --color-red: #d24e5e;
+  --color-orange: #e07a1a;
+  --color-yellow: #e0a31a;
+  --color-green: #148d28;
+  --color-cyan: #0c8490;
+  --color-blue: #1c95e6;
+  --color-purple: #801caf;
+  --color-pink: #d45aa0;
+}
+
+.theme-dark {
+  --accent-h: 194;
+  --accent-s: 100%;
+  --accent-l: 68%;
+  --color-accent: #5ad4ff;
+  --color-accent-1: #9ad1fc;
+  --color-accent-2: #128ddf;
+
+  --fa-titlebar: linear-gradient(to bottom, #1d6ea8 0%, #14598c 16%, #0c426e 50%, #082c4a 50%, #0e4e7a 100%);
+  --fa-heading: linear-gradient(to bottom, #2a7eb8 0%, #17659e 12%, #0d4d7c 50%, #0a3a5e 50%, #14598c 100%);
+  --fa-button: linear-gradient(to bottom, #3d8ec4 8%, #1d6ea8 50%, #0d4d7c 50%, #2180b8 100%);
+  --fa-button-hover: linear-gradient(to bottom, #5ad4ff 8%, #1d6ea8 50%, #0d4d7c 50%, #63e8ff 100%);
+  --fa-active: linear-gradient(to bottom, rgba(90, 212, 255, 0.16) 0%, rgba(18, 141, 223, 0.55) 100%);
+  --fa-scroll: linear-gradient(180deg, #9adfff 0%, #1a93d8 48%, #0a3a5e 100%);
+  --fa-code-bg: rgba(8, 28, 44, 0.92);
+  --fa-callout-bg: rgba(8, 32, 48, 0.72);
+
+  --background-primary: rgba(7, 24, 40, 0.9);
+  --background-primary-alt: rgba(8, 32, 52, 0.82);
+  --background-secondary: rgba(8, 36, 56, 0.72);
+  --background-secondary-alt: rgba(10, 48, 72, 0.55);
+  --background-modifier-border: rgba(77, 161, 218, 0.45);
+  --background-modifier-border-hover: #4da1da;
+  --background-modifier-border-focus: #5ad4ff;
+  --background-modifier-hover: rgba(90, 212, 255, 0.16);
+  --background-modifier-active-hover: rgba(90, 212, 255, 0.28);
+  --background-modifier-form-field: rgba(6, 22, 36, 0.78);
+  --background-modifier-cover: rgba(2, 10, 18, 0.55);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.45);
+  --background-modifier-success: rgba(60, 218, 86, 0.16);
+  --background-modifier-error: rgba(255, 90, 106, 0.18);
+  --background-modifier-error-rgb: 255, 90, 106;
+  --background-modifier-error-hover: rgba(255, 90, 106, 0.3);
+
+  --text-normal: #e7f7ff;
+  --text-muted: #b7dff3;
+  --text-faint: #7eb6d4;
+  --text-on-accent: #042033;
+  --text-accent: #5ad4ff;
+  --text-accent-hover: #9ad1fc;
+  --text-error: #ff8aa2;
+  --text-warning: #ffd54f;
+  --text-success: #7dffa0;
+  --text-highlight-bg: rgba(18, 141, 223, 0.45);
+  --text-selection: rgba(90, 212, 255, 0.35);
+
+  --interactive-normal: #b7dff3;
+  --interactive-hover: #e7f7ff;
+  --interactive-accent: #5ad4ff;
+  --interactive-accent-hover: #9ad1fc;
+  --interactive-success: #3cda56;
+
+  --link-color: #5ad4ff;
+  --link-color-hover: #9ad1fc;
+  --link-external-color: #5ad4ff;
+  --link-external-color-hover: #9ad1fc;
+  --link-unresolved-color: #d7a6ff;
+
+  --heading-formatting: #7eb6d4;
+  --h1-color: #9ad1fc;
+  --h2-color: #5ad4ff;
+  --h3-color: #8ad4ff;
+  --h4-color: #e7f7ff;
+  --h5-color: #e7f7ff;
+  --h6-color: #e7f7ff;
+
+  --titlebar-background: #0c426e;
+  --titlebar-background-focused: #14598c;
+  --titlebar-text-color-focused: #ffffff;
+  --tab-text-color: rgba(231, 247, 255, 0.78);
+  --tab-text-color-focused: #ffffff;
+  --tab-text-color-focused-active: #e7f7ff;
+  --tab-text-color-focused-highlighted: #ffffff;
+  --tab-outline-color: #4da1da;
+
+  --ribbon-background: rgba(8, 32, 52, 0.45);
+  --divider-color: rgba(77, 161, 218, 0.4);
+  --nav-item-color: #e7f7ff;
+  --nav-item-color-hover: #ffffff;
+  --nav-item-color-active: #ffffff;
+  --nav-item-color-selected: #ffffff;
+  --nav-item-background-hover: rgba(90, 212, 255, 0.16);
+  --nav-item-background-active: rgba(18, 141, 223, 0.45);
+  --nav-item-background-selected: rgba(18, 141, 223, 0.45);
+  --icon-color: #9ad1fc;
+  --icon-color-hover: #e7f7ff;
+  --icon-color-active: #5ad4ff;
+  --icon-color-focused: #5ad4ff;
+
+  --tag-color: #d7f4ff;
+  --tag-background: rgba(18, 141, 223, 0.35);
+  --tag-background-hover: rgba(90, 212, 255, 0.35);
+  --blockquote-border-color: #5ad4ff;
+  --list-marker-color: #5ad4ff;
+  --checkbox-color: #5ad4ff;
+  --checkbox-color-hover: #9ad1fc;
+  --checkbox-marker-color: #042033;
+  --indentation-guide: rgba(90, 212, 255, 0.28);
+  --indentation-guide-active: #5ad4ff;
+  --status-bar-text-color: #ffffff;
+  --status-bar-border-color: #0a84d6;
+  --color-red: #ff8aa2;
+  --color-orange: #ffb15a;
+  --color-yellow: #ffe08a;
+  --color-green: #7dffa0;
+  --color-cyan: #5ad4ff;
+  --color-blue: #9ad1fc;
+  --color-purple: #d7a6ff;
+  --color-pink: #ff9ed2;
+
+  scrollbar-color: rgba(90, 212, 255, 0.75) rgba(8, 24, 36, 0.55);
+}
+
+.app-container,
+.horizontal-main-container,
+.workspace,
+.workspace-split,
+.workspace-tabs,
+.workspace-tab-container,
+.workspace-leaf,
+.workspace-sidedock-vault-profile {
+  background-color: transparent;
+}
+
+.workspace-leaf-content,
+.workspace-ribbon,
+.workspace-tab-header-container,
+.status-bar,
+.modal,
+.prompt,
+.menu,
+.suggestion-container,
+.popover,
+.notice {
+  backdrop-filter: blur(10px) saturate(1.35);
+  -webkit-backdrop-filter: blur(10px) saturate(1.35);
+}
+
+.titlebar {
+  background: var(--fa-titlebar);
+  border-bottom: 1px solid #4da1da;
+  color: #ffffff;
+}
+
+.workspace-tab-header-container {
+  background: var(--fa-titlebar);
+  border-bottom: 2px solid #0a84d6;
+}
+
+.workspace-tab-header {
+  color: var(--tab-text-color);
+  border-radius: 6px 6px 0 0;
+}
+
+.workspace-tab-header.is-active {
+  background: linear-gradient(to bottom, #ffffff 0%, #e7f6ff 48%, #c5e4f8 100%);
+  color: #08365a;
+  box-shadow: inset 0 1px 0 #ffffff, 0 1px 2px rgba(0, 40, 70, 0.18);
+}
+
+.theme-dark .workspace-tab-header.is-active {
+  background: linear-gradient(to bottom, #1d6ea8 0%, #0e4e7a 55%, #0a3a5e 100%);
+  color: #e7f7ff;
+  box-shadow: inset 0 1px 0 rgba(154, 209, 252, 0.55);
+}
+
+.workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
+  color: inherit;
+}
+
+.workspace-ribbon.mod-left,
+.workspace-ribbon.mod-right {
+  background-color: var(--ribbon-background);
+  border-color: var(--divider-color);
+}
+
+.status-bar {
+  background: var(--fa-titlebar);
+  color: #ffffff;
+  border-top: 1px solid #4da1da;
+}
+
+.modal,
+.prompt,
+.menu,
+.suggestion-container {
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+.modal-title,
+.prompt .prompt-input-container {
+  color: var(--text-normal);
+}
+
+.vertical-tab-header {
+  background-color: var(--background-secondary);
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+.vertical-tab-nav-item.is-active,
+.menu-item.selected,
+.suggestion-item.is-selected,
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  background: var(--fa-active);
+  color: var(--nav-item-color-active);
+  border-radius: 4px;
+}
+
+.mod-cta,
+.setting-item button,
+.modal button,
+.prompt button {
+  background: var(--fa-button);
+  color: #ffffff;
+  border: 1px solid #4e88b1;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55), 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 0 rgba(0, 40, 70, 0.35);
+}
+
+.mod-cta:hover,
+.setting-item button:hover,
+.modal button:hover,
+.prompt button:hover {
+  background: var(--fa-button-hover);
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+textarea,
+.setting-item input,
+.search-input-container input {
+  background-color: var(--background-modifier-form-field);
+  border: 1px solid #87b0bd;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(0, 40, 70, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+input[type="range"] {
+  accent-color: #47b5ff;
+}
+
+::selection {
+  background: #38acfa;
+  color: #042033;
+}
+
+.theme-dark ::selection {
+  background: rgba(90, 212, 255, 0.45);
+  color: #e7f7ff;
+}
+
+.markdown-rendered h1,
+.inline-title,
+.cm-header-1 {
+  border-bottom: 2px solid #0a84d6;
+  padding-bottom: 0.15em;
+}
+
+.markdown-rendered code,
+.cm-s-obsidian .cm-inline-code,
+.markdown-rendered pre,
+.HyperMD-codeblock,
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  background-color: var(--fa-code-bg);
+}
+
+.markdown-rendered pre,
+.markdown-rendered table,
+.callout,
+.metadata-container {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+}
+
+.callout {
+  background-color: var(--fa-callout-bg);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.markdown-rendered th {
+  background: var(--fa-heading);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.theme-dark ::-webkit-scrollbar-track {
+  background: rgba(8, 24, 36, 0.45);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fa-scroll);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+}
+
+@media (max-width: 760px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
+/* Archive icons. PNG, not SVG: the source files are Vista bitmaps.
+   File-tree and view-header swaps do not depend on UI language.
+   Ribbon swaps use the English aria-labels from Obsidian's en locale. */
+
+.nav-file-title-content,
+.nav-folder-title-content {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 16px 16px;
+  padding-left: 20px;
+}
+
+.nav-folder-title-content {
+  background-image: var(--fa-icon-files);
+}
+
+.nav-file-title-content {
+  background-image: var(--fa-icon-note);
+}
+
+.nav-file-title[data-path$=".png" i] .nav-file-title-content,
+.nav-file-title[data-path$=".jpg" i] .nav-file-title-content,
+.nav-file-title[data-path$=".jpeg" i] .nav-file-title-content,
+.nav-file-title[data-path$=".gif" i] .nav-file-title-content,
+.nav-file-title[data-path$=".webp" i] .nav-file-title-content,
+.nav-file-title[data-path$=".svg" i] .nav-file-title-content,
+.nav-file-title[data-path$=".bmp" i] .nav-file-title-content,
+.nav-file-title[data-path$=".ico" i] .nav-file-title-content {
+  background-image: var(--fa-icon-image);
+}
+
+.nav-file-title[data-path$=".mp4" i] .nav-file-title-content,
+.nav-file-title[data-path$=".webm" i] .nav-file-title-content,
+.nav-file-title[data-path$=".mov" i] .nav-file-title-content,
+.nav-file-title[data-path$=".mkv" i] .nav-file-title-content {
+  background-image: var(--fa-icon-video);
+}
+
+.nav-file-title[data-path$=".pdf" i] .nav-file-title-content {
+  background-image: var(--fa-icon-book);
+}
+
+.nav-file-title[data-path$=".canvas" i] .nav-file-title-content {
+  background-image: var(--fa-icon-share);
+}
+
+.nav-file-title[data-path$=".js" i] .nav-file-title-content,
+.nav-file-title[data-path$=".ts" i] .nav-file-title-content,
+.nav-file-title[data-path$=".jsx" i] .nav-file-title-content,
+.nav-file-title[data-path$=".tsx" i] .nav-file-title-content,
+.nav-file-title[data-path$=".css" i] .nav-file-title-content,
+.nav-file-title[data-path$=".json" i] .nav-file-title-content,
+.nav-file-title[data-path$=".py" i] .nav-file-title-content,
+.nav-file-title[data-path$=".sh" i] .nav-file-title-content,
+.nav-file-title[data-path$=".yml" i] .nav-file-title-content,
+.nav-file-title[data-path$=".yaml" i] .nav-file-title-content,
+.nav-file-title[data-path$=".html" i] .nav-file-title-content,
+.nav-file-title[data-path$=".xml" i] .nav-file-title-content,
+.nav-file-title[data-path$=".rs" i] .nav-file-title-content,
+.nav-file-title[data-path$=".go" i] .nav-file-title-content,
+.nav-file-title[data-path$=".toml" i] .nav-file-title-content {
+  background-image: var(--fa-icon-console);
+}
+
+.view-header-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .view-header-icon {
+  background-image: var(--fa-icon-files);
+}
+
+.workspace-leaf-content[data-type="search"] .view-header-icon {
+  background-image: var(--fa-icon-search);
+}
+
+.workspace-leaf-content[data-type="bookmarks"] .view-header-icon {
+  background-image: var(--fa-icon-book);
+}
+
+.workspace-leaf-content[data-type="graph"] .view-header-icon {
+  background-image: var(--fa-icon-graph);
+}
+
+.workspace-leaf-content[data-type="canvas"] .view-header-icon {
+  background-image: var(--fa-icon-share);
+}
+
+.workspace-leaf-content[data-type="outline"] .view-header-icon {
+  background-image: var(--fa-icon-sidebar);
+}
+
+.workspace-leaf-content[data-type="backlink"] .view-header-icon,
+.workspace-leaf-content[data-type="outgoing-link"] .view-header-icon {
+  background-image: var(--fa-icon-share);
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .view-header-icon svg,
+.workspace-leaf-content[data-type="search"] .view-header-icon svg,
+.workspace-leaf-content[data-type="bookmarks"] .view-header-icon svg,
+.workspace-leaf-content[data-type="graph"] .view-header-icon svg,
+.workspace-leaf-content[data-type="canvas"] .view-header-icon svg,
+.workspace-leaf-content[data-type="outline"] .view-header-icon svg,
+.workspace-leaf-content[data-type="backlink"] .view-header-icon svg,
+.workspace-leaf-content[data-type="outgoing-link"] .view-header-icon svg {
+  visibility: hidden;
+}
+
+.side-dock-ribbon-action[aria-label="Open file explorer"],
+.side-dock-ribbon-action[aria-label="Search in all files"],
+.side-dock-ribbon-action[aria-label="Show bookmarks"],
+.side-dock-ribbon-action[aria-label="Open graph view"],
+.side-dock-ribbon-action[aria-label="Open local graph"],
+.side-dock-ribbon-action[aria-label="Open today's daily note"],
+.side-dock-ribbon-action[aria-label="Settings"],
+.side-dock-ribbon-action[aria-label="Open settings"],
+.side-dock-ribbon-action[aria-label="Help"],
+.side-dock-ribbon-action[aria-label="Open help"] {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+}
+
+.side-dock-ribbon-action[aria-label="Open file explorer"] {
+  background-image: var(--fa-icon-files);
+}
+
+.side-dock-ribbon-action[aria-label="Search in all files"] {
+  background-image: var(--fa-icon-search);
+}
+
+.side-dock-ribbon-action[aria-label="Show bookmarks"] {
+  background-image: var(--fa-icon-book);
+}
+
+.side-dock-ribbon-action[aria-label="Open graph view"],
+.side-dock-ribbon-action[aria-label="Open local graph"] {
+  background-image: var(--fa-icon-graph);
+}
+
+.side-dock-ribbon-action[aria-label="Open today's daily note"] {
+  background-image: var(--fa-icon-calendar);
+}
+
+.side-dock-ribbon-action[aria-label="Settings"],
+.side-dock-ribbon-action[aria-label="Open settings"] {
+  background-image: var(--fa-icon-settings);
+}
+
+.side-dock-ribbon-action[aria-label="Help"],
+.side-dock-ribbon-action[aria-label="Open help"] {
+  background-image: var(--fa-icon-help);
+}
+
+.side-dock-ribbon-action[aria-label="Open file explorer"] svg,
+.side-dock-ribbon-action[aria-label="Search in all files"] svg,
+.side-dock-ribbon-action[aria-label="Show bookmarks"] svg,
+.side-dock-ribbon-action[aria-label="Open graph view"] svg,
+.side-dock-ribbon-action[aria-label="Open local graph"] svg,
+.side-dock-ribbon-action[aria-label="Open today's daily note"] svg,
+.side-dock-ribbon-action[aria-label="Settings"] svg,
+.side-dock-ribbon-action[aria-label="Open settings"] svg,
+.side-dock-ribbon-action[aria-label="Help"] svg,
+.side-dock-ribbon-action[aria-label="Open help"] svg {
+  opacity: 0;
+}
+
+.callout[data-callout="note"] .callout-icon,
+.callout[data-callout="abstract"] .callout-icon,
+.callout[data-callout="todo"] .callout-icon,
+.callout[data-callout="info"] .callout-icon,
+.callout[data-callout="question"] .callout-icon,
+.callout[data-callout="tip"] .callout-icon,
+.callout[data-callout="success"] .callout-icon,
+.callout[data-callout="warning"] .callout-icon,
+.callout[data-callout="failure"] .callout-icon,
+.callout[data-callout="danger"] .callout-icon,
+.callout[data-callout="bug"] .callout-icon,
+.callout[data-callout="example"] .callout-icon,
+.callout[data-callout="quote"] .callout-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+}
+
+.callout[data-callout="note"] .callout-icon,
+.callout[data-callout="abstract"] .callout-icon,
+.callout[data-callout="todo"] .callout-icon {
+  background-image: var(--fa-icon-note);
+}
+
+.callout[data-callout="info"] .callout-icon,
+.callout[data-callout="question"] .callout-icon {
+  background-image: var(--fa-icon-info);
+}
+
+.callout[data-callout="tip"] .callout-icon {
+  background-image: var(--fa-icon-help);
+}
+
+.callout[data-callout="success"] .callout-icon {
+  background-image: var(--fa-icon-shield);
+}
+
+.callout[data-callout="warning"] .callout-icon,
+.callout[data-callout="failure"] .callout-icon,
+.callout[data-callout="danger"] .callout-icon,
+.callout[data-callout="bug"] .callout-icon {
+  background-image: var(--fa-icon-warning);
+}
+
+.callout[data-callout="example"] .callout-icon {
+  background-image: var(--fa-icon-console);
+}
+
+.callout[data-callout="quote"] .callout-icon {
+  background-image: var(--fa-icon-book);
+}
+
+.callout[data-callout="note"] .callout-icon svg,
+.callout[data-callout="abstract"] .callout-icon svg,
+.callout[data-callout="todo"] .callout-icon svg,
+.callout[data-callout="info"] .callout-icon svg,
+.callout[data-callout="question"] .callout-icon svg,
+.callout[data-callout="tip"] .callout-icon svg,
+.callout[data-callout="success"] .callout-icon svg,
+.callout[data-callout="warning"] .callout-icon svg,
+.callout[data-callout="failure"] .callout-icon svg,
+.callout[data-callout="danger"] .callout-icon svg,
+.callout[data-callout="bug"] .callout-icon svg,
+.callout[data-callout="example"] .callout-icon svg,
+.callout[data-callout="quote"] .callout-icon svg {
+  visibility: hidden;
+}
