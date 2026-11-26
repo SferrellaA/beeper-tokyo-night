@@ -6,9 +6,9 @@ The picture is [`assets/windows_vista_59.jpg`](assets/windows_vista_59.jpg), fro
 
 ## Install
 
-The theme folder Obsidian loads has to be named `Frutiger Aero`, the same as `name` in [`manifest.json`](manifest.json).
+This folder is already named `Frutiger Aero`, which is the `name` in [`manifest.json`](manifest.json). Obsidian hides a theme whose folder name does not match that field.
 
-1. Copy this directory to `<vault>/.obsidian/themes/Frutiger Aero/`.
+1. Copy this directory into `<vault>/.obsidian/themes/`. Leave the folder name as `Frutiger Aero`.
 2. Restart Obsidian if it was already open.
 3. Settings → Appearance → Themes → **Frutiger Aero**.
 4. Pick **Light** or **Dark**. **System** follows the OS.
@@ -33,10 +33,12 @@ PNG, 128px (the book is 48px in the source icon). File-tree and pane-header icon
 
 | Icon | Used for |
 | --- | --- |
-| `files.png` | Folders, file explorer |
-| `note.png` | Notes, note / todo callouts |
+| `folder.png` | Folders. Plain Vista folder, not the drive or Explorer window |
+| `files.png` | File explorer ribbon and pane |
+| `book.png` | Markdown notes, bookmarks, quote callouts |
+| `pdf.png` | PDF files. Adobe's document icon; Vista itself had none |
+| `note.png` | Other files, note / todo callouts |
 | `search.png` | Search |
-| `book.png` | Bookmarks, PDF, quote callouts |
 | `graph.png` | Graph view |
 | `calendar.png` | Daily note ribbon button |
 | `settings.png` | Settings |
@@ -44,14 +46,14 @@ PNG, 128px (the book is 48px in the source icon). File-tree and pane-header icon
 | `info.png` | Info and question callouts |
 | `warning.png` | Warning, danger, bug callouts |
 | `shield.png` | Success callouts |
-| `image.png` | Image files |
+| `image.png` | Image files. Vista's picture icon, a landscape in a frame |
 | `video.png` | Video files |
 | `console.png` | Code files, example callouts |
 | `share.png` | Canvas, backlinks |
 | `sidebar.png` | Outline |
 | `computer.png`, `trash.png`, `marketplace.png`, `accessibility.png` | In the folder if you want them in a snippet. Not wired to a control. |
 
-Set `--fa-wallpaper` in a CSS snippet to point the background at another picture. Paths in `theme.css` are relative to this folder.
+The picture and icons are embedded in `theme.css`. Obsidian does not load a relative `assets/` path from a theme, so the files in `assets/` are the sources, not what the app reads.
 
 ## License
 

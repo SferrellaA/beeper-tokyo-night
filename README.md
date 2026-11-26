@@ -11,7 +11,7 @@ CSS loaded as `custom.css`. Install steps are in [beeper/README.md](beeper/READM
 
 ## Obsidian
 
-- [Frutiger Aero](obsidian/frutiger-aero/README.md) — Vista glass over the aurora wallpaper, with archive icons on the file tree, ribbon, and callouts. Copy the folder into the vault theme directory.
+- [Frutiger Aero](obsidian/Frutiger%20Aero/README.md) — Vista glass over the aurora wallpaper, with archive icons on the file tree, ribbon, and callouts. The folder name matches the manifest, so it can be copied straight into `.obsidian/themes/`.
 
 ## Windows Terminal
 
